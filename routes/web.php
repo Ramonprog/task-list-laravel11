@@ -76,9 +76,7 @@ Route::get('/', function () use($tasks) {
 })->name('tasks.index');
 
 Route::get('/{id}', function ($id) {
-    if (!is_numeric($id)) {
-        return 'The id is not numeric';
-    }
+   
     return 'The id is ' . $id;
 })->name('tasks.show');
 
