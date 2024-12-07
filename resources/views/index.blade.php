@@ -1,5 +1,8 @@
-<h1>Hello I'm a blade file</h1>
+@extends('layouts.app')
 
+@section('title', 'The list of tasks')
+
+@section('content')
 <div>
     @forelse ($tasks as $task)
         <div>
@@ -9,3 +12,4 @@
         <div>There are no thasks!</div>
     @endforelse
 </div>
+@endsection
